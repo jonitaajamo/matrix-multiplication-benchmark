@@ -19,7 +19,7 @@ def main():
 
     # Multiply matrices using numpy.matmul
     bc = np.matmul(b,c)
-    np.save("ab", bc)
+    np.save("bc", bc)
 
     b,c = None,None
 
