@@ -12,14 +12,11 @@ def main():
     a = None
 
     b = generate_random_matrix(size=(10**3,10**6), low=0.0, high=1.0)
-    np.save("b", b)
 
     c = generate_random_matrix(size=(10**6,1), low=0.0, high=1.0)
-    np.save("c", c)
 
     # Multiply matrices using numpy.matmul
     bc = np.matmul(b,c)
-    np.save("bc", bc)
 
     b,c = None,None
 
